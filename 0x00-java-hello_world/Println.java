@@ -1,4 +1,4 @@
-public class PrintIn {
+public class Println {
 
     public static void main(String[] args) {
 
