@@ -11,6 +11,6 @@ public class PrintFormatacaoNumeros {
         String valorreplace2 = valorreplace.substring(0,8) + "." + valorreplace.substring(9);
         System.out.print("Valor: " + valorreplace2 + "\n");
         System.out.printf("Taxa: %.2f" , taxa);
-        System.out.println("%");
+        System.out.println("%"+"\n");
     }
 }
