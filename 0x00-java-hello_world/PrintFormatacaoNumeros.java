@@ -9,6 +9,7 @@ public class PrintFormatacaoNumeros {
         String valorreplace = ((valorFormatado.replace(".",",")));
         String valorreplace2 = valorreplace.substring(0,8) + "." + valorreplace.substring(9);
         System.out.printf("Valor: %s\n", valorreplace2);
-        System.out.printf("Taxa:  %.2f%%", taxa);
+        System.out.printf("Taxa: %.2f", taxa);
+        System.out.println("%");
     }
 }
