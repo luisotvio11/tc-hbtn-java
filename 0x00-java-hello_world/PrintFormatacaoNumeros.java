@@ -7,6 +7,6 @@ public class PrintFormatacaoNumeros {
         NumberFormat numeroFormatado = NumberFormat.getCurrencyInstance(new Locale("en","US"));
         String valorFormatado = numeroFormatado.format(valor);
         System.out.printf("Valor: R%s\n" ,valorFormatado);
-        System.out.printf("Taxa: %.2f%% " , taxa);
+        System.out.printf("Taxa: %.2f%%\n" , taxa);
     }
 }
