@@ -1,11 +1,11 @@
 public class Numeros0a99 {
-
     public static void main(String[] args) {
 
-        for ( int numero = 0; numero < 100; numero ++) {
-
-            System.out.print(numero + ",");
+        for (int x = 0;  x < 100; x++) {
+            if ( x==99)
+                System.out.println(x + "\n");
+            else
+                System.out.println(x + ",");
         }
-
     }
 }
