@@ -3,9 +3,9 @@ public class Numeros0a99 {
 
         for (int x = 0;  x < 100; x++) {
             if ( x==99)
-                System.out.println(x + "\n");
+                System.out.print(x + "\n");
             else
-                System.out.println(x + ",");
+                System.out.print(x + ",");
         }
     }
 }
