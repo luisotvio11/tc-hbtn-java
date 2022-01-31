@@ -13,7 +13,7 @@ public class Empregado {
 		
 	}
 	
-	 double calcularBonus (Departamento departamento) {
+	public	double calcularBonus (Departamento departamento) {
 		
 		if ( departamento.alcancouMeta()) {
 			
