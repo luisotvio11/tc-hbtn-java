@@ -26,7 +26,7 @@ public class Retangulo  extends FormaGeometrica{
 		
 		if (this.altura < 0) {
 			
-			throw new IllegalArgumentException("Altura deve ser maior ou igual a 0");
+			throw new IllegalArgumentException("Altura deve ser maior ou igual a 1");
 		}
 		
 		
