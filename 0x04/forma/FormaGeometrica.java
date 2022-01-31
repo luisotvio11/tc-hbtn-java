@@ -1,24 +1,6 @@
+public class FormaGeometrica {
 	
-		public class FormaGeometrica {
-	
-	
-			public double area () {
-				
-			
-					throw new UnsupportedOperationException("Funcao Area nao implementada");
-				
-		
-			}
-			
-			
-			
-
-		
-				
-
+	public double area () {
+			throw new UnsupportedOperationException("Funcao Area nao implementada \n");
 	}
-	
-	
-	
-
-
+}
