@@ -1,8 +1,8 @@
-
-public class Quadrado extends Retangulo{
+public class Quadrado extends Retangulo {
 
 	private double lado;
 
+	
 	@Override
 	public double area() {
 		return lado * lado;
