@@ -1,4 +1,4 @@
-public class Program {
+public class Programa {
     public static void main(String[] args) {
         Retangulo retangulo = new Retangulo();
         retangulo.setLargura(7);
