@@ -65,9 +65,6 @@ public class PersonagemGame {
 			saudeAtual = 100;
 		}
 
-
-		
-		
 		
 		}
 
