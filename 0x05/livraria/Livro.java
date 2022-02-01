@@ -33,6 +33,8 @@ public class Livro {
 			throw new LivroInvalidoException("Titulo de livro invalido");
 		}
 		
+		this.titulo = titulo;
+
 		
 		
 		}
