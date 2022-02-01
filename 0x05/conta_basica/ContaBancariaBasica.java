@@ -2,7 +2,7 @@ import exceptions.OperacaoInvalidaException;
 
 public class ContaBancariaBasica {
 	
-		
+	
 	
 	private String numeracao;
 	private double saldo;
@@ -36,7 +36,7 @@ public class ContaBancariaBasica {
 		
 		if (valor <= 0 ) {
 			
-			throw new OperacaoInvalidaException("Valor para deposito deve ser maior que 0\r\n");
+			throw new OperacaoInvalidaException("Valor para deposito deve ser maior que 0");
 		}
 				
 				
