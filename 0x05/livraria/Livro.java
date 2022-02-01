@@ -56,7 +56,7 @@ public class Livro {
 				
 				else {
 					
-					throw new AutorInvalidoException("Nome do Autor invalido");
+					throw new AutorInvalidoException("Nome de Autor invalido");
 				}
 			
 			this.autor = autor;
