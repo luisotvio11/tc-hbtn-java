@@ -63,7 +63,7 @@ public class Livro {
 			
 			if (preco <= 0.00) {
 				
-				throw new LivroInvalidoException("Preço de livro invalido");
+				throw new LivroInvalidoException("Preco de livro invalido");
 				
 				
 			}
