@@ -21,8 +21,6 @@ public class Endereco {
 		this.cidade = cidade;
 		this.estado = estado;
 		this.pais = pais;
-		
-		
 	}
 	
 	

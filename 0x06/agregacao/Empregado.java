@@ -8,8 +8,8 @@ public class Empregado {
 	
 	public Empregado (String nome, int codigo, Endereco endereco) {
 		
-		super()
-;		this.nome = nome;
+		super();
+		this.nome = nome;
 		this.codigo = codigo;
 		this.endereco = endereco;
 		
