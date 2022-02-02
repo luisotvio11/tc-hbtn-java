@@ -1,11 +1,8 @@
-
 public class Program {
 
 	public static void main(String[] args) {
 		
-		
-		
-		Endereco endereco = new Endereco("Rua Marechal Deodoro",
+			Endereco endereco = new Endereco("Rua Marechal Deodoro",
 	            "135",
 	            "",
 	            "Santo Amaro",
@@ -20,9 +17,6 @@ public class Program {
 	    System.out.println();
 	}
 	
-
-		
-		
 	}
 	
 	
