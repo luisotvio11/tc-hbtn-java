@@ -1,74 +1,46 @@
+public class Empregado {
 
-public class Endereco {
-	
-	private String logradouro;
-	private String numero;
-	private String complemento;
-	private String bairro;
-	private String cidade;
-	private String estado;
-	private String pais;
-	
-	
-	
-	public Endereco (String logradouro, String numero, String complemento,String bairro, String cidade, String estado, String pais) {
-		
-		
-		this.logradouro = logradouro;
-		this.numero = numero;
-		this.complemento = complemento;
-		this.bairro = bairro;
-		this.cidade = cidade;
-		this.estado = estado;
-		this.pais = pais;
+	private String nome;
+	private int codigo;
+	private Endereco endereco;
+
+	public Empregado(String nome, int codigo, Endereco endereco) {
+		super();
+		this.nome = nome;
+		this.codigo = codigo;
+		this.endereco = endereco;
 	}
-	
-	
-	
-	
-	public String getLogradouro() {
-		return logradouro;
+
+		public void apresentar() {
+		System.out.println("Codigo: "+ codigo);
+		System.out.println("Nome: "+ nome);
+		System.out.println("Bairro: "+ endereco.getBairro());
+		System.out.println("Cidade: "+ endereco.getCidade());
+		System.out.println("Pais: "+ endereco.getPais());
+}
+
+	public String getNome() {
+		return nome;
 	}
-	public void setLogradouro(String logradouro) {
-		this.logradouro = logradouro;
+
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
-	public String getNumero() {
-		return numero;
+
+	public int getCodigo() {
+		return codigo;
 	}
-	public void setNumero(String numero) {
-		this.numero = numero;
+
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
 	}
-	public String getComplemento() {
-		return complemento;
+
+	public Endereco getEndereco() {
+		return endereco;
 	}
-	public void setComplemento(String complemento) {
-		this.complemento = complemento;
+
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
 	}
-	public String getBairro() {
-		return bairro;
-	}
-	public void setBairro(String bairro) {
-		this.bairro = bairro;
-	}
-	public String getCidade() {
-		return cidade;
-	}
-	public void setCidade(String cidade) {
-		this.cidade = cidade;
-	}
-	public String getEstado() {
-		return estado;
-	}
-	public void setEstado(String estado) {
-		this.estado = estado;
-	}
-	public String getPais() {
-		return pais;
-	}
-	public void setPais(String pais) {
-		this.pais = pais;
-	}
-	
-	
 
 }
