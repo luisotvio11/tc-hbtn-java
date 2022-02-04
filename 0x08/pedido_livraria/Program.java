@@ -47,5 +47,4 @@ public class Program {
 
 		System.out.printf("Total Pedido: %.2f\n", pedido4.calcularTotal());
 	}
-
 }
