@@ -2,11 +2,11 @@ import java.util.ArrayList;
 
 public class ListaTodo {
 
-	public ArrayList<Tarefa> tarefas;
+	private ArrayList<Tarefa> tarefas;
 
 	public ListaTodo() {
 
-		this.tarefas = new ArrayList<>();
+		this.tarefas = new ArrayList<Tarefa>();
 	}
 
 	public void adicionarTarefa(Tarefa tarefa) {
