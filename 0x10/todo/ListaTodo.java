@@ -6,7 +6,7 @@ public class ListaTodo {
 
 	public ListaTodo() {
 
-		tarefas = new ArrayList<>();
+		this.tarefas = new ArrayList<>();
 	}
 
 	public void adicionarTarefa(Tarefa tarefa) {
@@ -18,15 +18,15 @@ public class ListaTodo {
 
 		for (int i = 0; i < tarefas.size(); i++) {
 
-			if (tarefas.get(i).getIdentificador() == tarefa.getIdentificador()) {
+			if (this.tarefas.get(i).getIdentificador() == tarefa.getIdentificador()) {
 
 				throw new IllegalArgumentException(
-						"Tarefa com identificador <identificador> ja existente na lista\r\n" + "");
+						"Tarefa com identificador " + tarefa.getIdentificador() + " ja existente na lista");
 
 			}
 		}
 
-		tarefas.add(tarefa);
+		this.tarefas.add(tarefa);
 
 	}
 
