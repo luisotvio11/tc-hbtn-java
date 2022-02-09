@@ -39,8 +39,14 @@ public class Tarefa {
 
 		if (descricaoAtualizada.isEmpty() || descricaoAtualizada != null);
 
-		throw new IllegalAccessException("Descricao de tarefa invalida");
+		throw new IllegalArgumentException("Descricao de tarefa invalida");
 
 	}
-
+	
+  
+	
+	
 }
+
+
+
