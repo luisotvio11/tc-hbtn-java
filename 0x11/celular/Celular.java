@@ -2,19 +2,19 @@ import java.util.ArrayList;
 
 public class Celular {
 
-	private ArrayList<Contato> listaContatos;
+	private ArrayList<Contato> contatos;
 
 	public Celular() {
 
-		this.listaContatos = new ArrayList<Contato>();
+		this.contatos = new ArrayList<Contato>();
 
 	}
 
 	public Integer obterPosicaoContato(String nome) {
 
-		for (int i = 0; i < this.listaContatos.size(); i++) {
+		for (int i = 0; i < this.contatos.size(); i++) {
 
-			if (this.listaContatos.get(i).getNome().equals(nome)) {
+			if (this.contatos.get(i).getNome().equals(nome)) {
 
 				return i;
 			}
@@ -32,7 +32,7 @@ public class Celular {
 					"Nao foi possivel adicionar contato. Contato jah existente com esse nome");
 		}
 
-		listaContatos.add(contato);
+		contatos.add(contato);
 	}
 
 	public void atualizarContato(Contato contatoAntigo, Contato novoContato) {
@@ -55,7 +55,7 @@ public class Celular {
 
 		Integer posicaoContato = obterPosicaoContato(contatoAntigo.getNome());
 
-		this.listaContatos.set(posicaoContato, novoContato);
+		this.contatos.set(posicaoContato, novoContato);
 	}
 
 	public Contato buscarContato(String nome) {
@@ -63,7 +63,7 @@ public class Celular {
 		if (posicaoContato == null)
 			return null;
 
-		return listaContatos.get(posicaoContato);
+		return contatos.get(posicaoContato);
 
 	}
 
@@ -73,15 +73,15 @@ public class Celular {
 			throw new IllegalArgumentException("Nao foi possivel remover contato. Contato nao existe");
 		}
 
-		this.listaContatos.remove(posicaoContato.intValue());
+		this.contatos.remove(posicaoContato.intValue());
 
 	}
 
 	public void listarContatos() {
 
-		for (int j = 0; j < this.listaContatos.size(); j++) {
-			System.out.println(this.listaContatos.get(j).getNome() + " -> "
-					+ this.listaContatos.get(j).getNumeroTelefone() + " (" + this.listaContatos.get(j).getTipo() + ")");
+		for (int j = 0; j < this.contatos.size(); j++) {
+			System.out.println(this.contatos.get(j).getNome() + " -> " + this.contatos.get(j).getNumeroTelefone() + " ("
+					+ this.contatos.get(j).getTipo() + ")");
 		}
 	}
 
