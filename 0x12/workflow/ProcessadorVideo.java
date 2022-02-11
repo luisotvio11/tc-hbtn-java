@@ -19,7 +19,7 @@ public class ProcessadorVideo {
 	
 	public void processar (Video video) {
 		
-		String messageVideo = video.getArquivo() + "-" + video.getFormato();
+		String messageVideo = video.getArquivo() + " - " + video.getFormato();
 		
 		Mensagem mensagem = new Mensagem(messageVideo, TipoMensagem.LOG);
 		

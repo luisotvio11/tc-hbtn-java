@@ -15,7 +15,7 @@ public class Mensagem {
 		return texto;
 	}
 
-	public void setTipo(String tipo) {
+	public void setTexto(String texto) {
 		this.texto = texto;
 	}
 
