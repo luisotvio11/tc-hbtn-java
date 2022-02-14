@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-import atividade.Atividade;
+import atividades.Atividade;
 
 public class Workflow {
 	
