@@ -2,25 +2,31 @@ import provedores.Frete;
 
 public class Pedido {
 
-	private int pedido;
+	private int codigo;
 	private int peso;
 	private double total;
 	private Frete frete;
 	
 	
 	
-	public Pedido(int pedido, int peso, double total) {
+	
+	
+	
+	
+	public Pedido(int codigo, int peso, double total) {
 		super();
-		this.pedido = pedido;
+		this.codigo = codigo;
 		this.peso = peso;
 		this.total = total;
 	}
-	public int getPedido() {
-		return pedido;
+	public int getCodigo() {
+		return codigo;
 	}
-	public void setPedido(int pedido) {
-		this.pedido = pedido;
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
 	}
+	
+	
 	public int getPeso() {
 		return peso;
 	}
