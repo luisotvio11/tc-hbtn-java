@@ -3,7 +3,7 @@ import provedores.Frete;
 public class Pedido {
 
 	private int codigo;
-	private int peso;
+	private double peso;
 	private double total;
 	private Frete frete;
 	
@@ -27,7 +27,7 @@ public class Pedido {
 	}
 	
 	
-	public int getPeso() {
+	public double getPeso() {
 		return peso;
 	}
 	public void setPeso(int peso) {
