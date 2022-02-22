@@ -7,7 +7,7 @@ import java.util.TreeSet;
 
 public class Blog {
 	
-	public List<Post> posts;
+	private List<Post> posts;
 
 	
 	public Blog () {
