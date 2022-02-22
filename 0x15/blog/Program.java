@@ -13,7 +13,7 @@ public class Program {
 
         Post post2 = new Post("John Bannons", 
             "Trabalhando com a interface Set em Java",
-            "A interface Set é implementada por várias coleções em Java bla bla bla",
+            "A interface Set e implementada por varias colecoes em Java bla bla bla",
             "Desenvolvimento");            
 
         Post post3 = new Post("Jane Doe", 
@@ -23,7 +23,7 @@ public class Program {
 
         Post post4 = new Post("Jane Doe", 
             "Azure Service Bus por onde começar",
-            "Primeiramente, é necessário entender que bla bla bla",
+            "Primeiramente, e necessario entender que bla bla bla",
             "DevOps");
 
         Post post5 = new Post("Jane Doe", 
