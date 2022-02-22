@@ -22,7 +22,7 @@ public class Program {
             "DevOps");            
 
         Post post4 = new Post("Jane Doe", 
-            "Azure Service Bus por onde começar",
+            "Azure Service Bus por onde comecar",
             "Primeiramente, e necessario entender que bla bla bla",
             "DevOps");
 
