@@ -3,9 +3,10 @@ import java.util.List;
 
 public class Biblioteca <T extends Midia> {
 
-    private List <T>  listaValores =  new ArrayList<>();
+    private List <T>  listaValores ;
 
     public Biblioteca() {
+        this.listaValores = new ArrayList<>();
     }
 
     public void adicionarMidia (T tipoMidia) {
