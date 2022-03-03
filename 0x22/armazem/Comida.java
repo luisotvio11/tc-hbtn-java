@@ -27,7 +27,7 @@ public class Comida {
 
 	@Override
 	public String toString() {
-		return "[" + this.nome + "] " + this.calorias + " R$ " + String.format("%f", this.preco);
+		return "[" + this.nome + "] " + String.format("%f", this.calorias) + " R$ " + String.format("%f", this.preco);
 	}
 
 }
