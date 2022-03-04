@@ -34,7 +34,7 @@ public class Estudante implements Serializable {
 	}
 	@Override
 	public String toString() {
-		return "Estudante " + "{ " + "nome=" + "'" + nome +"'" + ", idade=" + "'" + idade + "'"+ ", senha=" + "'" + senha + "'" +  "}" ;
+		return "Estudante " + "{ " + "nome=" + "'" + nome +"'" + ", idade=" + "'" + idade + "'"+ ", senha=" + "'" + senha + "' " +  "}" ;
 	}
 	
 	
