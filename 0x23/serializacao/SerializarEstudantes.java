@@ -11,13 +11,11 @@ public class SerializarEstudantes<T> {
 
 	private String nomeDoArquivo;
 
-
-
 	public SerializarEstudantes(String nomeDoArquivo) {
 		super();
 		this.nomeDoArquivo = nomeDoArquivo;
 	}
-
+    @SuppressWarnings("unchecked")
 	public void serializar(List<Estudante> listaEstudante) {
 
 		try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(nomeDoArquivo))) {
@@ -32,29 +30,27 @@ public class SerializarEstudantes<T> {
 		}
 
 	}
-	
-	public List <Estudante> desserializar () throws FileNotFoundException, IOException {
-		
-		List <Estudante> listaEstudantes =new ArrayList<>();
-		
-		
-		try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(nomeDoArquivo))){
-			
 
-			return listaEstudantes = (List <Estudante>)ois.readObject();
-			
+	@SuppressWarnings("unchecked")
+	public List<Estudante> desserializar() throws FileNotFoundException, IOException {
+
+		List<Estudante> listaEstudantes = new ArrayList<>();
+
+		try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(nomeDoArquivo))) {
+
+			return listaEstudantes = (List<Estudante>) ois.readObject();
+
 		}
-		
+
 		catch (IOException ex) {
-			
+
 			System.out.println("Nao foi possivel desserializar");
 		}
-		
+
 		catch (Exception ex) {
-            System.out.println("Nao foi possivel desserializar");
+			System.out.println("Nao foi possivel desserializar");
 		}
-		
-		
+
 		return listaEstudantes;
 	}
 }
